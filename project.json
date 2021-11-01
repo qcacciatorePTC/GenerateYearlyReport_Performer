@@ -3,6 +3,7 @@
   "description": "GenerateYearlyReport Performer",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.System.Activities": "[21.10.2]",
     "UiPath.Testing.Activities": "[1.4.3]",
