@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>634.4,1766.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>686.4,1766.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -95,7 +95,7 @@
         <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">[password]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="558.4,1322.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_System1URL]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="558.4,1322.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_System1URL]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -110,7 +110,7 @@
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="483.2,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
             <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into Email" sap:VirtualizedContainerService.HintSize="483.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[username]">
               <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f945c024-a63a-4c52-97f6-3b45339e7883" InformativeScreenshot="deddc6d848bbcdbea1cf23f40e25b140" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;&lt;webctrl id='email' tag='INPUT' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f945c024-a63a-4c52-97f6-3b45339e7883" InformativeScreenshot="deddc6d848bbcdbea1cf23f40e25b140" Selector="&lt;html title='ACME System 1 - Log In' /&gt;&lt;webctrl id='email' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -122,7 +122,7 @@
             </ui:TypeInto>
             <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Secure Text Password" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[password]">
               <ui:TypeSecureText.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="203574cf-df6c-4b5d-a7f6-6afe53c30877" InformativeScreenshot="b44beba9428ae69f99225c06c1a298ba" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;&lt;webctrl id='password' tag='INPUT' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="203574cf-df6c-4b5d-a7f6-6afe53c30877" InformativeScreenshot="b44beba9428ae69f99225c06c1a298ba" Selector="&lt;html title='ACME System 1 - Log In' /&gt;&lt;webctrl id='password' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -144,7 +144,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fabfff21-db8e-4056-bd5a-ef88602aca37" InformativeScreenshot="fd56545662d8965252b32ce6411a03f0" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fabfff21-db8e-4056-bd5a-ef88602aca37" InformativeScreenshot="fd56545662d8965252b32ce6411a03f0" Selector="&lt;html title='ACME System 1 - Log In' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -156,7 +156,7 @@
             </ui:Click>
             <ui:UiElementExists DisplayName="Element Exists 'H1'" Exists="[LoginSuccesful]" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f818dae8-ed97-4c9d-93c3-f244c1187607" InformativeScreenshot="0c7b156a873556fa920ec9cc62da972a" Selector="&lt;html app='firefox.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl isleaf='1' tag='H1' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f818dae8-ed97-4c9d-93c3-f244c1187607" InformativeScreenshot="0c7b156a873556fa920ec9cc62da972a" Selector="&lt;html title='ACME System 1 - Dashboard' /&gt;&lt;webctrl isleaf='1' tag='H1' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
